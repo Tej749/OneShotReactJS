@@ -1,5 +1,7 @@
-function Product() {
-  return <h1>Product Page</h1>;
-}
+import React from "react";
+
+const Product = () => {
+  return <div>Product</div>;
+};
 
 export default Product;

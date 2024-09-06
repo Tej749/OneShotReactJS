@@ -1,5 +1,7 @@
-function Create() {
-  return <h1>Create Page</h1>;
-}
+import React from "react";
+
+const Create = () => {
+  return <div>Create</div>;
+};
 
 export default Create;
