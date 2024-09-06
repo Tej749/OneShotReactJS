@@ -1,19 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./home/Home";
-import About from "./about/About";
-import Contact from "./contact/Contact";
-
+import Home from "./pages/home/Home";
+import Product from "./pages/product/Product";
 function App() {
-  const name = "John";
-
   return (
     <BrowserRouter>
-      <Routes>
+      <Router>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Route path="/product" element={<Product />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/edit" element={<Edit />} />
+      </Router>
     </BrowserRouter>
   );
 }
